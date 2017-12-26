@@ -5,3 +5,4 @@ class logrotate::uninstall::remove{
 		}
 	}
 }
+

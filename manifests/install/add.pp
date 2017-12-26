@@ -5,3 +5,4 @@ class logrotate::install::add{
 		}
 	}
 }
+
