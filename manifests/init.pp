@@ -9,3 +9,4 @@ class logrotate(
 		include logrotate::uninstall::remove
 	}
 }
+

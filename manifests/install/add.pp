@@ -1,6 +1,6 @@
 class logrotate::install::add{
 	if $operatingsystem == 'Ubuntu'{
-		package{'logrotate':
+		package{'$packagename':
 			ensure => installed,
 		}
 	}
