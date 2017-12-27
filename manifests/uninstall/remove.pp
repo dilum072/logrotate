@@ -1,6 +1,8 @@
-class logrotate::uninstall::remove{
+class logrotate::uninstall::remove(
+		$pack = 'undef',
+){
 	if $operatingsystem == 'Ubuntu'{
-		package{'$packagename':
+		package{'$pack':
 			ensure => purged,
 		}
 	}

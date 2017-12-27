@@ -1,6 +1,8 @@
-class logrotate::install::add{
+class logrotate::install::add(
+	$pack = 'undef',
+){
 	if $operatingsystem == 'Ubuntu'{
-		package{'$packagename':
+		package{'$pack':
 			ensure => installed,
 		}
 	}
